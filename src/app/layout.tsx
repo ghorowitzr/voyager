@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Voyages — Send a ship into the unknown',
+  title: 'Voyager — Send a ship into the unknown',
   description: 'Plan a voyage, launch it, and come back later to see what happened.',
 };
 

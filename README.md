@@ -1,4 +1,4 @@
-# Voyages
+# Voyager
 
 Plan a voyage, launch it, leave, and come back later to see what happened. A
 persistent, water-routed sailing-expedition simulator. Built with Next.js +
@@ -37,7 +37,7 @@ src/
     page.tsx          renders the app
     globals.css       ported theme/styles (day + night)
   components/
-    VoyagesApp.tsx    client component: markup + mounts the runtime
+    VoyagerApp.tsx    client component: markup + mounts the runtime
   lib/
     app-controller.ts imperative MapLibre + UI runtime (the verified engine)
     storage.ts        >>> the persistence seam <<<

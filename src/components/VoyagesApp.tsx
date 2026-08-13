@@ -10,7 +10,7 @@ export default function VoyagesApp(){
       <div id="map"></div>
       <div id="vignette"></div>
       
-      <div id="brand"><h1>VOYAGES</h1><div className="sub">Send a ship into the unknown</div><div className="rule"></div></div>
+      <div id="brand"><h1>VOYAGER</h1><div className="sub">Send a ship into the unknown</div><div className="rule"></div></div>
       
       <div id="clock" >
       <div className="day" id="clockDay">Day —</div>

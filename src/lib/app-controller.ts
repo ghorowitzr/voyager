@@ -814,7 +814,7 @@ function voyageReport(v){const st=stateAt(v,v.baseDurationDays);let out=`JOURNAL
 function downloadVoyage(id){const v=STATE.voyages.find(x=>x.id===id);if(!v)return;const blob=new Blob([voyageReport(v)],{type:'text/plain'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`${v.name.replace(/\s+/g,'_')}_journal.txt`;a.click();showToast('Journal downloaded');}
 function shareVoyage(id){const v=STATE.voyages.find(x=>x.id===id);if(!v)return;const st=stateAt(v,v.baseDurationDays);
-  const txt=`${v.name} sailed ${v.start.n} → ${v.dest.n} — ${st.dur.toFixed(0)} days, ${Math.round(v.distanceNm).toLocaleString()} nm. Hull ${Math.round(st.hull)}%, crew ${st.crew}/${st.ship.crew}. #Voyages`;
+  const txt=`${v.name} sailed ${v.start.n} → ${v.dest.n} — ${st.dur.toFixed(0)} days, ${Math.round(v.distanceNm).toLocaleString()} nm. Hull ${Math.round(st.hull)}%, crew ${st.crew}/${st.ship.crew}. #Voyager`;
   if(navigator.clipboard){navigator.clipboard.writeText(txt).then(()=>showToast('Summary copied to clipboard')).catch(()=>showToast(txt));}else showToast('Copy: '+txt);}
 
 /* ---------------- Demos ---------------- */
